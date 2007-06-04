@@ -2,7 +2,7 @@ package File::Find::Rule::DirectoryEmpty;
 use strict;
 use base 'File::Find::Rule';
 
-our $VERSION = sprintf "%d.%02d", q$Revision: 1.9 $ =~ /(\d+)/g;
+our $VERSION = sprintf "%d.%02d", q$Revision: 1.1 $ =~ /(\d+)/g;
 
 
 sub File::Find::Rule::directoryempty {

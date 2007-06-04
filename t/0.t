@@ -3,7 +3,7 @@ use strict;
 use lib './lib';
 use File::Find::Rule::DirectoryEmpty;
 use Cwd;
-use Smart::Comments '###';
+#use Smart::Comments '###';
 
 mkdir cwd().'/t/emptyhere';
 
