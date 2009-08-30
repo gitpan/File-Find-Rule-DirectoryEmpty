@@ -2,7 +2,7 @@ package File::Find::Rule::DirectoryEmpty;
 use strict;
 use base 'File::Find::Rule';
 use vars qw($VERSION);
-$VERSION = sprintf "%d.%02d", q$Revision: 1.10 $ =~ /(\d+)/g;
+$VERSION = sprintf "%d.%02d", q$Revision: 1.11 $ =~ /(\d+)/g;
 
 sub File::Find::Rule::directoryempty {
 	my $self = shift->_force_object;
@@ -41,7 +41,7 @@ File::Find::Rule::DirectoryEmpty - find empty directories recursively
 	use File::Find::Rule::DirectoryEmpty;
 	
 	my @emptydirs = File::Find::Rule->directoryempty->in('/home/myself');
-
+   
    # another way..
    
    my $o = new File::Find::Rule;
@@ -68,15 +68,27 @@ something other then . or .. This helps with speed.
 
 This may not work on windows platforms. You're welcome to send in a patch for it. 
 
-=head1 AUTHOR
-
-Leo Charre leocharre at cpan dot org
-
 =head1 SEE ALSO
 
 L<File::Find::Rule>
 
+=head1 AUTHOR
+
+Leo Charre leocharre at cpan dot org
+
+=head1 COPYRIGHT
+
+Copyright (c) 2009 Leo Charre. All rights reserved.
+
+=head1 LICENSE
+
+This package is free software; you can redistribute it and/or modify it under the same terms as Perl itself, i.e., under the terms of the "Artistic License" or the "GNU General Public License".
+
+=head1 DISCLAIMER
+
+This package is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+See the "GNU General Public License" for more details.
+   
 =cut
-
-
 
